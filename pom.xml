@@ -1,29 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.devopsite</groupId>
-  <artifactId>crupier</artifactId>
-  <packaging>jar</packaging>
-  <version>1.0.0-SNAPSHOT</version>
-  <name>Crupier</name>
-  
-  
-  	<properties>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.devopsite</groupId>
+	<artifactId>crupier</artifactId>
+	<packaging>jar</packaging>
+	<version>1.0.0-SNAPSHOT</version>
+	<name>Crupier</name>
+
+
+	<properties>
 		<slf4j.version>1.6.1</slf4j.version>
 		<junit.version>4.5</junit.version>
 	</properties>
 
-  <dependencies>
-  		<!-- BEGIN: Test -->
+	<dependencies>
+		<!-- BEGIN: Test -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>${junit.version}</version>
 			<scope>test</scope>
 		</dependency>
-  		<!-- END: Test -->
+		<!-- END: Test -->
 
-  		<!-- BEGIN: LOG -->
+		<!-- BEGIN: LOG -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
@@ -40,19 +41,19 @@
 			<version>${slf4j.version}</version>
 		</dependency>
 		<!-- END: LOG -->
-	<dependency>
-       <groupId>org.jboss.netty</groupId>
-       <artifactId>netty</artifactId>
-       <version>3.2.4.Final</version>
-       <scope>compile</scope>
-     </dependency>
-  </dependencies>
-  <developers>
-    <developer>
-      <name>Gustavo Valdez</name>
-      <id>gustavo.valdez@gmail.com</id>
-      <email>gustavo.valdez@gmail.com</email>
-      <organization>devopsite.com</organization>
-    </developer>
-  </developers>
+		<dependency>
+			<groupId>org.jboss.netty</groupId>
+			<artifactId>netty</artifactId>
+			<version>3.2.4.Final</version>
+			<scope>compile</scope>
+		</dependency>
+	</dependencies>
+	<developers>
+		<developer>
+			<name>Gustavo Valdez</name>
+			<id>gustavo.valdez@gmail.com</id>
+			<email>gustavo.valdez@gmail.com</email>
+			<organization>devopsite.com</organization>
+		</developer>
+	</developers>
 </project>
