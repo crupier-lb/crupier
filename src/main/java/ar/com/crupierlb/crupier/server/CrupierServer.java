@@ -10,16 +10,13 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
 import java.net.InetSocketAddress;
 
 /**
- * Listing 2.3 of <i>Netty in Action</i>
- * 
- * @author <a href="mailto:nmaurer@redhat.com">Norman Maurer</a>
  */
-public class EchoServer
+public class CrupierServer
 {
 
 	private final int port;
 
-	public EchoServer(int port)
+	public CrupierServer(int port)
 	{
 		this.port = port;
 	}
@@ -35,12 +32,12 @@ public class EchoServer
 				@Override
 				public void initChannel(SocketChannel ch) throws Exception
 				{
-					ch.pipeline().addLast(new EchoServerHandler());
+					ch.pipeline().addLast(new CrupierServerHandler());
 				}
 			});
 
 			ChannelFuture f = b.bind().sync();
-			System.out.println(EchoServer.class.getName() + " started and listen on " + f.channel().localAddress());
+			System.out.println(CrupierServer.class.getName() + " started and listen on " + f.channel().localAddress());
 			f.channel().closeFuture().sync();
 		}
 		finally

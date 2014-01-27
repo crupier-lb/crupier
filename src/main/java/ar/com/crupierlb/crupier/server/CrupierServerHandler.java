@@ -7,12 +7,9 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 
 /**
- * Listing 2.4 of <i>Netty in Action</i>
- * 
- * @author <a href="mailto:nmaurer@redhat.com">Norman Maurer</a>
  */
 @Sharable
-public class EchoServerHandler extends ChannelInboundHandlerAdapter
+public class CrupierServerHandler extends ChannelInboundHandlerAdapter
 {
 
 	@Override
